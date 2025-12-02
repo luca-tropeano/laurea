@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Aggiungi i campi e gli elementi UI necessari per raccogliere le informazioni sull'evento -->
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titolo dell'evento" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrizione dell'evento"
+        android:minHeight="48dp" />
+
+    <!-- Aggiungi altri campi o layout per raccogliere informazioni aggiuntive sull'evento -->
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home"/>
+
+        <item
+            android:id="@+id/nav_pomodoro"
+            android:icon="@drawable/nav_pomodoro"
+            android:title="@string/pomodoromethod"/>
+
+        <item
+            android:id="@+id/nav_blurting"
+            android:icon="@drawable/nav_blurting"
+            android:title="@string/blurting_method"/>
+
+        <item
+            android:id="@+id/nav_three_two_one"
+            android:icon="@drawable/nav_threetwoone"
+            android:title="@string/threetwoonemethod"/>
+
+        <item
+            android:id="@+id/nav_research"
+            android:icon="@drawable/nav_research"
+            android:title="@string/research"/>
+
+        <item
+            android:id="@+id/nav_statistics"
+
+            android:title="@string/statistics"/>
+
+
+    </group>
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/nav_logout"
+                android:title="@string/logout"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_buy_pro"
+                android:icon="@drawable/nav_buy_pro"
+                android:title="@string/buy_pro"/>
+        </menu>
+
+    </item>
+
+</menu>
