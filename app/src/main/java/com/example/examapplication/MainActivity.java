@@ -76,10 +76,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     .replace(R.id.fragment_container, new PomodoroFragment()).commit();
         } else if (itemId == R.id.nav_blurting) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, new BlurtingFragment()).commit();
+                    .replace(R.id.fragment_container, new FlashcardsFragment()).commit();
         } else if (itemId == R.id.nav_three_two_one) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, new ThreeTwoOneFragment()).commit();
+                    .replace(R.id.fragment_container, new Sq3rWizardFragment()).commit();
         }else if (itemId == R.id.nav_statistics) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fragment_container, new StatisticsFragment()).commit();
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             finish();
         } else if (itemId == R.id.nav_buy_pro) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, new BuyProFragment()).commit();
+                    .replace(R.id.fragment_container, new HelpFragment()).commit();
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

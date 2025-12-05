@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Titolo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I MIEI METODI DI STUDIO"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp"
+            android:gravity="center" />
+
+        <!-- Card Pomodoro -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp"
+            android:clipToOutline="true">
+
+            <LinearLayout
+                android:id="@+id/pomodoroHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🍅 Pomodoro Technique"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/pomodoroArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▼"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/pomodoroDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/pomodoroContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• 25 min studio concentrato\n• 5 min pausa\n• Ogni 4 pomodori: pausa lunga 15-20 min\n\nSpezza lo studio in blocchi brevi per mantenere l'attenzione massima."
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Card Flashcards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp"
+            android:clipToOutline="true">
+
+            <LinearLayout
+                android:id="@+id/flashcardHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="📚 Flashcards"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/flashcardArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▼"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/flashcardDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/flashcardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Davanti: domanda/parola chiave\n• Dietro: risposta/definizione\n• Prova a ricordare PRIMA di girare\n\nPerfetto per definizioni, formule, date."
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Card SQ3R -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp"
+            android:clipToOutline="true">
+
+            <LinearLayout
+                android:id="@+id/sq3rHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="📖 SQ3R"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/sq3rArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▼"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/sq3rDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sq3rContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Survey: guarda veloce il testo\n• Question: fai domande\n• Read: leggi cercando risposte\n• Recite: spiega con parole tue\n• Review: ripassa\n\nMetodo completo per testi lunghi."
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

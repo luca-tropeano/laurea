@@ -15,27 +15,27 @@
         <item
             android:id="@+id/nav_pomodoro"
             android:icon="@drawable/nav_pomodoro"
-            android:title="@string/pomodoromethod"/>
+            android:title="Tecnica del Pomodoro"/>
 
         <item
             android:id="@+id/nav_blurting"
             android:icon="@drawable/nav_blurting"
-            android:title="@string/blurting_method"/>
+            android:title="Flashcards"/>
 
         <item
             android:id="@+id/nav_three_two_one"
             android:icon="@drawable/nav_threetwoone"
-            android:title="@string/threetwoonemethod"/>
+            android:title="Metodo Sq3r"/>
 
         <item
             android:id="@+id/nav_research"
             android:icon="@drawable/nav_research"
-            android:title="@string/research"/>
+            android:title="Ricerca"/>
 
         <item
             android:id="@+id/nav_statistics"
 
-            android:title="@string/statistics"/>
+            android:title="Statistiche Studio"/>
 
 
     </group>
@@ -58,7 +58,7 @@
             <item
                 android:id="@+id/nav_buy_pro"
                 android:icon="@drawable/nav_buy_pro"
-                android:title="@string/buy_pro"/>
+                android:title="Aiuto"/>
         </menu>
 
     </item>

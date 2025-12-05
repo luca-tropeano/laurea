@@ -37,7 +37,7 @@
         android:id="@+id/startPomodoroButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Pomodoro"
+        android:text="Inizia Pomodoro"
         android:layout_below="@id/timerTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
@@ -46,7 +46,7 @@
         android:id="@+id/startShortBreakButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Short Break"
+        android:text="Inizia una piccola pausa"
         android:layout_below="@id/startPomodoroButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
@@ -55,7 +55,7 @@
         android:id="@+id/startLongBreakButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Long Break"
+        android:text="Inizia una lunga pausa"
         android:layout_below="@id/startShortBreakButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />

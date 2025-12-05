@@ -14,19 +14,19 @@
         android:id="@+id/addSubjectButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Course" />
+        android:text="Aggiungi Esame/Materia" />
 
     <Button
         android:id="@+id/addHoursButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Hour" />
+        android:text="Aggiungi Ore" />
 
     <Button
         android:id="@+id/editEntriesButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Edit/Delete Hour" />
+        android:text="Modifica/Elimina Ore" />
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/weeklyChart"
