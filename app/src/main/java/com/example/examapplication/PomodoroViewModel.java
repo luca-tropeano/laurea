@@ -6,9 +6,9 @@ import androidx.lifecycle.ViewModel;
 import android.os.CountDownTimer;
 
 public class PomodoroViewModel extends ViewModel {
-    private static final int POMODORODURATIONSECONDS = 10;
-    private static final int BREAKDURATIONSECONDS = 10;
-    private static final int LONGBREAKDURATIONSECONDS = 10;
+    private static final int POMODORODURATIONSECONDS = 1500;
+    private static final int BREAKDURATIONSECONDS = 300;
+    private static final int LONGBREAKDURATIONSECONDS = 1200;
     private static final int POMODORIFORLONGBREAK = 4;
 
     private MutableLiveData<Long> timerLiveData = new MutableLiveData<>();
@@ -20,7 +20,7 @@ public class PomodoroViewModel extends ViewModel {
 
     private CountDownTimer countDownTimer;
     private boolean isTimerRunning = false;
-    private int pomodoriCount = 0; // ✅ VARIABILE LOCALE SINCRO
+    private int pomodoriCount = 0; //  VARIABILE LOCALE SINCRO
 
     public LiveData<Long> getTimerLiveData() { return timerLiveData; }
     public LiveData<Boolean> getTimerExpiredLiveData() { return timerExpiredLiveData; }
@@ -50,11 +50,11 @@ public class PomodoroViewModel extends ViewModel {
                 timerExpiredLiveData.postValue(true);
                 isTimerRunning = false;
 
-                // ✅ INCREMENTO SINCRO
+                //  INCREMENTO SINCRO
                 pomodoriCount++;
                 pomodoriCompletedLiveData.postValue(pomodoriCount);
 
-                // ✅ CONTROLLO SINCRO sul valore locale
+                //  CONTROLLO SINCRO sul valore locale
                 if (pomodoriCount < POMODORIFORLONGBREAK) {
                     showOnlyShortBreak();
                 } else {
@@ -90,7 +90,7 @@ public class PomodoroViewModel extends ViewModel {
     public void startLongBreak() {
         if (isTimerRunning) return;
 
-        // ✅ RESET SINCRO
+        // RESET SINCRO
         pomodoriCount = 0;
         pomodoriCompletedLiveData.postValue(0);
 

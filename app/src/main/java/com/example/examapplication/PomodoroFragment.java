@@ -15,9 +15,6 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 public class PomodoroFragment extends Fragment {
-    private static final int POMODORODURATIONSECONDS = 15;
-    private static final int BREAKDURATIONSECONDS = 15;
-    private static final int LONGBREAKDURATIONSECONDS = 15;
 
     private TextView timerTextView;
     private Button startPomodoroButton, startShortBreakButton, startLongBreakButton;
